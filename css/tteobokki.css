@@ -1,25 +1,19 @@
-@font-face {
-    font-family: araboto-normal;
-    src: url(../misc/araboto-fonts/Araboto\ Normal\ 400.ttf);
-}
-
 * {
     padding: 0%;
     margin: 0%;
 }
 
-.index {
+body {
     height: 100vh;
     display: grid;
     place-items: center;
-    font-family: araboto-normal;
     position: relative;
     isolation: isolate;
     font-size: 31px;
     color: white;
 }
 
-.index::after {
+body::after {
     background-image: url(../img/index-background.svg);
     background-size: cover;
     filter: brightness(40%);
@@ -28,18 +22,3 @@
     content: '';
     position: absolute;
 }
-
-.anime-girl {
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
-
-.white-circle {
-    position: absolute;
-    z-index: 0;
-    top: 250px;
-    left: 1000px;
-}
-
