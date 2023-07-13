@@ -1,6 +1,11 @@
 @font-face {
-    font-family: araboto-normal;
+    font-family: araboto;
     src: url(../misc/araboto-fonts/Araboto\ Normal\ 400.ttf);
+}
+
+@font-face {
+    font-family: jujutsu-kaisen;
+    src: url(../misc/jujutsu-kaisen.ttf);
 }
 
 * {
@@ -10,15 +15,16 @@
 
 .index {
     height: 100vh;
-    display: grid;
     place-items: center;
-    font-family: araboto-normal;
+    display: grid;
+    font-family: araboto;
     position: relative;
     isolation: isolate;
     font-size: 31px;
     color: white;
 }
 
+/* For background image */
 .index::after {
     background-image: url(../img/index-background.svg);
     background-size: cover;
@@ -27,6 +33,11 @@
     z-index: -1;
     content: '';
     position: absolute;
+}
+
+h1 {
+    font-family: jujutsu-kaisen;
+    font-size: 150px;
 }
 
 .anime-girl {
@@ -39,7 +50,17 @@
 .white-circle {
     position: absolute;
     z-index: 0;
-    top: 250px;
+    top: 305px;
     left: 1000px;
+    width: 580px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
 
