@@ -1,60 +1,115 @@
+html,
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
 @font-face {
     font-family: araboto;
     src: url(../misc/araboto-fonts/Araboto\ Normal\ 400.ttf);
+}
+.index {
+    position: relative;
+    height: 100vh;
+    place-items: center;
+    display: grid;
+    font-family: araboto;
+    isolation: isolate;
+    font-size: 31px;
+    color: white;
+}
+
+.index::after { /* For background image */
+    background-image: url(../img/index-background.svg);
+    background-size: cover;
+    position: absolute;
+    filter: brightness(40%);
+    inset: 0;
+    z-index: -1;
+    content: '';
 }
 
 @font-face {
     font-family: jujutsu-kaisen;
     src: url(../misc/jujutsu-kaisen.ttf);
 }
-
-* {
-    padding: 0%;
-    margin: 0%;
-}
-
-.index {
-    height: 100vh;
-    place-items: center;
-    display: grid;
-    font-family: araboto;
-    position: relative;
-    isolation: isolate;
-    font-size: 31px;
-    color: white;
-}
-
-/* For background image */
-.index::after {
-    background-image: url(../img/index-background.svg);
-    background-size: cover;
-    filter: brightness(40%);
-    inset: 0;
-    z-index: -1;
-    content: '';
-    position: absolute;
-}
-
 h1 {
+    position: relative;
     font-family: jujutsu-kaisen;
-    font-size: 150px;
+    transform: scale(3);
+    top: 50px;
+    text-align: center;
+}
+
+h3 {
+    position: relative;
+    top: 300px;
 }
 
 .anime-girl {
     position: relative;
     z-index: 1;
-    top: 0;
-    left: 0;
+    top: 140px;
 }
-
 .white-circle {
     position: absolute;
     z-index: 0;
-    top: 305px;
+    top: 240px;
     left: 1000px;
     width: 580px;
 }
 
+/*Recipe links and images attached to the left*/
+div.recipe-list-0 {
+    position: relative;
+    top: -100px;
+    left: -800px;
+}
+
+div.recipe-list-0 img {
+    height: 610px;
+    width: 365px;
+    z-index: 1;
+}
+
+div.recipe-list-0 a {
+    position: absolute;
+    z-index: 0;
+    max-width: 365px;
+    text-align: center;
+    border-style: dashed;
+}
+
+div.recipe-list-0 .spirited-away-eating {
+    width: 365px;
+}
+
+/*Recipe links and images attached to the right*/
+div.recipe-list-1 {
+    position: relative;
+    top: -723px;
+    right: -827px;
+}
+
+div.recipe-list-1 img {
+    position: relative;
+    height: 610px;
+    width: 365px;
+    z-index: 0;
+    margin-right: 30px;
+}
+
+div.recipe-list-1 a {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    max-width: 365px;
+}
+
+@font-face {
+    font-family: araboto-bold;
+    src: url(../misc/araboto-fonts/Araboto\ Bold\ 400.ttf);
+}
 a:link,
 a:visited,
 a:hover,
@@ -62,5 +117,5 @@ a:active {
     color: white;
     background-color: transparent;
     text-decoration: none;
+    font-family: araboto-bold;
 }
-
