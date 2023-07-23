@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    border: 5px red;
+    border-style: solid;
 }
 
 html,
@@ -45,7 +47,6 @@ h1 {
 h1,
 h3 {
     display: inline;
-    top: 3vh;
 }
 
 .images {
