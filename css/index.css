@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    border: 5px red;
-    border-style: solid;
 }
 
 html,
@@ -47,6 +45,7 @@ h1 {
 h1,
 h3 {
     display: inline;
+    top: 3vh;
 }
 
 .images {
@@ -55,11 +54,17 @@ h3 {
 
 .anime-girl {
     position: absolute;
-    width: 500px;
+    width: 20vw;
     height: auto;
     top: 43%;
     left: 50%; 
     transform: translate(-50%, -50%);
+}
+
+.pink-circle {
+    text-align: left;
+    width: 22.7vw;
+    height: auto;
 }
 
 /* @font-face {
