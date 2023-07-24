@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    border: 5px #ff0000;
-    border-style: solid;
 }
 
 html,
@@ -82,16 +80,44 @@ h3 {
     height: 40vh;
     vertical-align: bottom;
     z-index: -1;
-    filter: brightness(90%);
+    filter: brightness(85%);
 }
 
 .recipe-list-0 a {
     position: absolute;
     top: 30vh;
     width: 13vw;
+    height: auto;
 }
 
 .spirited-away-eating {
+    margin-right: 3vw;
+}
+
+/*Recipes on the right*/
+.recipe-list-1 {
+    position: absolute;
+    display: inline-block;
+    top: 27vw;
+    right: 1.8vw;
+}
+
+.recipe-list-1 .images {
+    width: 13vw;
+    height: 40vh;
+    vertical-align: bottom;
+    z-index: -1;
+    filter: brightness(85%);
+}
+
+.recipe-list-1 a {
+    position: absolute;
+    top: 30vh;
+    width: 13vw;
+    height: auto;
+}
+
+.kiki-eating {
     margin-right: 3vw;
 }
 
@@ -103,7 +129,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    color: #f8bee6;
+    color: #facbeb;
     text-decoration: none;
     font-family: araboto-bold;
 }
