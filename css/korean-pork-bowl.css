@@ -3,3 +3,137 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+}
+
+.intro::after {
+    background: url(../img/korean-pork-bowl/anime-room-background.jpg);
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    content: '';
+    isolation: isolate;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+@font-face {
+    font-family: araboto;
+    src: url(../misc/araboto-fonts/Araboto\ Normal\ 400.ttf);
+}
+.intro {
+    position: relative;
+    color: #ffffff;
+    margin: 0;
+    display: block;
+    font-family: araboto;
+    text-align: center;
+}
+
+.details {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    font-weight: bold;
+}
+
+.intro .korean-recipe-heading {
+    position: absolute;
+    font-size: 5em;
+    display: block;
+    margin: 0;
+    width: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+.intro .english-recipe-heading {
+    position: absolute;
+    display: block;
+    margin: 2m 0 auto;
+    top: 0;
+    width: 100%;
+    font-size: 5.5em;
+    letter-spacing: 0.2em;
+}
+
+.details h2 {
+    font-size: 3em;
+}
+
+.details p {
+    font-size: 1.95em;
+}
+
+/* Ingredients section begins */
+.ingredients {
+    position: relative;
+    color: #ffffff;
+    font-family: araboto;
+    text-align: center;
+}
+
+.ingredients::after {
+    background: #394657;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    content: '';
+    isolation: isolate;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.ingredients h1 {
+    position: absolute;
+    display: block;
+    margin: 2m 0 auto;
+    top: 0;
+    width: 100%;
+    font-size: 5.5em;
+    letter-spacing: 0.2em;
+}
+
+.ingredients-lists ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.95em;
+}
+
+.ingredients-lists h2 {
+    font-size: 3em;
+    font-weight: bold;
+    border: 8px solid #ffffff;
+    padding: 0.5em;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.ingredients-lists {
+    position: absolute;
+    display: inline-flex;
+    width: fit-content;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    padding-top: 8em;
+}
+
+.ingredients-lists div {
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+    padding: 0 5em;
+}

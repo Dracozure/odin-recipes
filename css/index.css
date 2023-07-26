@@ -31,7 +31,6 @@ body::before { /* For background image */
     z-index: -1;
     isolation: isolate;
     content: '';
-    overflow: hidden;
 }
 
 @font-face {
