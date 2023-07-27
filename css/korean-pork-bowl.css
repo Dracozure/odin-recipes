@@ -59,7 +59,7 @@ div {
     left: 7%;
 }
 
-.intro .english-recipe-heading {
+.intro .recipe-heading {
     position: absolute;
     display: block;
     margin: 2m 0 auto;
@@ -67,6 +67,17 @@ div {
     width: 100%;
     font-size: 5.5em;
     letter-spacing: 0.2em;
+}
+
+.intro .japanese-recipe-heading {
+    position: absolute;
+    font-size: 4em;
+    display: block;
+    margin: 0;
+    width: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7%;
 }
 
 .details h2 {
@@ -96,7 +107,7 @@ div {
     filter: brightness(50%);
 }
 
-.ingredients h1 {
+.ingredients .ingredients-heading {
     position: absolute;
     display: block;
     margin: 2m 0 auto;
@@ -104,6 +115,28 @@ div {
     width: 100%;
     font-size: 5.5em;
     letter-spacing: 0.2em;
+}
+
+.ingredients .korean-ingredients-heading {
+    position: absolute;
+    font-size: 5em;
+    display: block;
+    margin: 0;
+    width: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+.ingredients .japanese-ingredients-heading {
+    position: absolute;
+    font-size: 5em;
+    display: block;
+    margin: 0;
+    width: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7%;
 }
 
 .ingredients-lists ul {
@@ -132,6 +165,88 @@ div {
 }
 
 .ingredients-lists div {
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+    padding: 0 5em;
+}
+
+/* Cooking instructions section begins */
+.cooking {
+    position: relative;
+    font-family: araboto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cooking::after {
+    background-color: #13446b;
+    background-size: cover;
+    inset: 0;
+    z-index: -1;
+    content: '';
+    isolation: isolate;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.cooking .cooking-heading {
+    position: absolute;
+    display: block;
+    margin: 2m 0 auto;
+    top: 0;
+    width: 100%;
+    font-size: 5.5em;
+    letter-spacing: 0.2em;
+}
+
+.cooking .korean-cooking-heading {
+    position: absolute;
+    font-size: 5em;
+    display: block;
+    margin: 0;
+    width: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+.cooking .japanese-cooking-heading {
+    position: absolute;
+    font-size: 5em;
+    display: block;
+    margin: 0;
+    width: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7%;
+}
+
+.cooking-lists ol {
+    padding: 0;
+    font-size: 1.7em;
+}
+
+.cooking-lists h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+    border: 8px solid #ffffff;
+    padding: 0.5em;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.cooking-lists {
+    position: absolute;
+    display: inline-flex;
+    width: fit-content;
+    height: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    padding-top: 8em;
+}
+
+.cooking-lists div {
     display: inline-block;
     width: fit-content;
     height: auto;
