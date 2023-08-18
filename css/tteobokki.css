@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ameston-outline;
+    src: url(../misc/AmestonOutline.otf);
+}
+.intro h1 {
+    font-family: ameston-outline;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    flex: auto;
+    border: 5px solid red;
+}
+
+.intro > * { 
+    border: 5px solid red;
+    margin: 0;
+}
+
+.intro img {
+    max-width: 100%;
+}
