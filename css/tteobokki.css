@@ -13,24 +13,48 @@ body {
     font-family: ameston-outline;
     src: url(../misc/AmestonOutline.otf);
 }
-.intro h1 {
-    font-family: ameston-outline;
+
+.intro::before {
+    background: url(../img/tteobokki/manga-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    inset: 0;
+    z-index: -1;
+    content: '';
+    isolation: isolate;
+    position: absolute;
+    filter: brightness(60%);
 }
 
 .intro {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0;
-    flex: auto;
-    border: 5px solid red;
+    position: relative;
+    color: #ffffff;
+    font-size: 2rem;
 }
 
-.intro > * { 
-    border: 5px solid red;
-    margin: 0;
+.intro h1 {
+    font-family: ameston-outline;
+    font-size: 15rem;
+    font-weight: normal;
 }
 
-.intro img {
-    max-width: 100%;
+@font-face {
+    font-family: gluck-regular;
+    src: url(../misc/gluck-fonts/Gluck\ Regular.otf);
+}
+@font-face {
+    font-family: gluck-bold;
+    src: url(../misc/gluck-fonts/Gluck\ Bold.otf);
+}
+
+.description {
+    font-family: gluck-regular;
+    font-size: 1.2rem;
+}
+
+.description h2 {
+    font-family: gluck-bold;
 }
