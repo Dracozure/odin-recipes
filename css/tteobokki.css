@@ -162,3 +162,32 @@ body {
     width: 500px;
     height: auto;
 }
+
+.make-dish {
+    display: flex;
+    background-color: #3a3434;
+    color: #ffffff;
+    font-family: gluck-regular;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.make-dish h2 {
+    font-family: gluck-bold;
+    font-size: 3rem;
+}
+
+.make-dish img {
+    width: 900px;
+    height: auto;
+    margin: 100px;
+}
+
+.make-dish .interpretation {
+    width: 500px;
+    height: auto;
+}
+
