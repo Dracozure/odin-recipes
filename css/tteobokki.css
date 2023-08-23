@@ -161,6 +161,7 @@ body {
 .prep .interpretation {
     width: 500px;
     height: auto;
+    text-align: left;
 }
 
 .make-dish {
@@ -184,10 +185,18 @@ body {
     width: 900px;
     height: auto;
     margin: 100px;
+    margin-bottom: 20px;
 }
 
-.make-dish .interpretation {
-    width: 500px;
+.make-dish ol {
+    display: flex;
+    flex: 1;
+}
+
+.make-dish .row {
+    width: 550px;
     height: auto;
+    margin-left: 70px;
+    text-align: left;
 }
 
