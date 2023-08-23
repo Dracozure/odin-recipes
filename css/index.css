@@ -23,7 +23,7 @@ body {
 }
 
 body::before { /* For background image */
-    background-image: url(../img/index-background.svg);
+    background-image: url(../img/index/index-background.svg);
     background-size: cover;
     position: fixed;
     filter: brightness(25%);
