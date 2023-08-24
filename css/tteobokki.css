@@ -175,11 +175,6 @@ img {
     flex-wrap: wrap;
 }
 
-.prep-ingredients > *,
-.make-dish > * {
-    border: 5px red solid;
-}
-
 .make-dish {
     background-color: #161515;
 }
