@@ -81,7 +81,7 @@ img {
 }
 
 .description.section > * {
-    border: 5px solid red;
+    border: 5px red solid;
 }
 
 .description.section h2 {
@@ -126,7 +126,11 @@ img {
     flex-wrap: wrap;
 }
 
-.ingredients.section .ingredients-lists {
+.ingredients.section > * {
+    border: 5px red solid;
+}
+
+.ingredients.section .ingredients-image-list {
     display: flex;
     flex: auto;
     flex-direction: column;
@@ -179,6 +183,15 @@ img {
     flex-wrap: wrap;
 }
 
+.prep-ingredients > *,
+.make-dish > * {
+    border: 5px red solid;
+}
+
+.make-dish {
+    background-color: #161515;
+}
+
 .prep-ingredients .interpretation {
     width: 500px;
     height: auto;
@@ -206,6 +219,6 @@ img {
 .make-dish img {
     width: 900px;
     height: auto;
-    margin-bottom: 28.8px;
+    margin-bottom: 28.8px; /* Reduce extra space between margin of image and interpretation */
 }
 
