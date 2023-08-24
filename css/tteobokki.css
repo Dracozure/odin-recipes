@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
+}
+
 html,
 body {
     margin: 0;
@@ -39,19 +43,27 @@ body {
     font-weight: normal;
 }
 
+.interpretation {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
 h2 {
-    margin: 50px 0;
+    margin: 3.125rem 0;
 }
 
 li {
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 img {
     min-width: 300px;
     min-height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 6.25rem 2.813rem;
+}
+
+@media screen {
+    
 }
 
 /* INTRODUCTION SECTION */
@@ -143,7 +155,7 @@ img {
 }
 
 .ingredients.section img { 
-    margin: 45px;
+    margin: 2.813rem;
     width: 250px;
     height: auto;
 }
@@ -194,18 +206,19 @@ img {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .make-dish .row {
     width: 550px;
     height: auto;
-    margin: 0 50px;
+    margin: 0 3.125rem;
     text-align: left;
 }
 
 .make-dish img {
     width: 900px;
     height: auto;
-    margin-bottom: 28.8px; /* Reduce extra space between margin of image and interpretation */
+    margin-bottom: 1.8rem; /* Reduce extra space between margin of image and interpretation */
 }
 
