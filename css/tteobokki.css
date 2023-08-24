@@ -80,10 +80,6 @@ img {
     flex-wrap: wrap;
 }
 
-.description.section > * {
-    border: 5px red solid;
-}
-
 .description.section h2 {
     font-family: gluck-bold;
     font-size: 4rem;
@@ -124,10 +120,6 @@ img {
     font-family: gluck-regular;
     font-size: 1.8rem;
     flex-wrap: wrap;
-}
-
-.ingredients.section > * {
-    border: 5px red solid;
 }
 
 .ingredients.section .ingredients-image-list {
