@@ -24,6 +24,26 @@ body {
     src: url(../misc/gluck-fonts/Gluck\ Bold.otf);
 }
 
+.intro.heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.intro.heading h1 {
+    font-family: ameston-outline;
+    font-size: 15rem;
+    font-weight: normal;
+}
+
+img {
+    min-width: 300px;
+    min-height: auto;
+}
+
 /* INTRODUCTION SECTION */
 
 .tteobokki.intro::before {
@@ -38,22 +58,7 @@ body {
     filter: brightness(60%);
 }
 
-.intro {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    color: #ffffff;
-    font-size: 2rem;
-}
-
-.intro h1 {
-    font-family: ameston-outline;
-    font-size: 15rem;
-    font-weight: normal;
-}
-
-.description {
+.description.section {
     display: flex;
     background-color: #000000;
     color: #ffffff;
@@ -65,19 +70,20 @@ body {
     flex-wrap: wrap;
 }
 
-.description h2 {
+.description.section h2 {
     font-family: gluck-bold;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
-.description img {
-    width: 900px;
-    height: auto;
-    margin: 100px;
-}
-
-.description .interpretation {
+.description.section .interpretation {
+    flex: initial;
     width: 500px;
+    height: auto;
+}
+
+.description.section img {
+    flex: initial;
+    width: 900px;
     height: auto;
 }
 
@@ -112,17 +118,18 @@ body {
     flex-direction: column;
 }
 
-.ingredients.section .interpretation {
-    display: flex;
-    flex: auto;
-    justify-content: center;
-}
-
 .ingredients.section .row { 
     align-items: center;
     justify-content: center;
     display: flex;
     flex: auto;
+    flex-wrap: wrap;
+}
+
+.ingredients.section .interpretation {
+    display: flex;
+    flex: auto;
+    justify-content: center;
 }
 
 .ingredients.section img { 
@@ -158,25 +165,6 @@ body {
     flex-wrap: wrap;
 }
 
-.prep-ingredients img {
-    width: 800px;
-    height: auto;
-    margin: 100px;
-}
-
-.prep-ingredients .interpretation {
-    width: 500px;
-    height: auto;
-    text-align: left;
-}
-
-.make-dish img {
-    width: 900px;
-    height: auto;
-    margin: 100px;
-    margin-bottom: 20px;
-}
-
 .make-dish ol {
     display: flex;
     flex: 1;
@@ -187,5 +175,24 @@ body {
     height: auto;
     margin-left: 70px;
     text-align: left;
+}
+
+.prep-ingredients .interpretation {
+    width: 500px;
+    height: auto;
+    text-align: left;
+}
+
+.prep-ingredients img {
+    width: 800px;
+    height: auto;
+    margin: 100px;
+}
+
+.make-dish img {
+    width: 900px;
+    height: auto;
+    margin: 100px;
+    margin-bottom: 20px;
 }
 
