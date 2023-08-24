@@ -39,9 +39,19 @@ body {
     font-weight: normal;
 }
 
+h2 {
+    margin: 50px 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
 img {
     min-width: 300px;
     min-height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 /* INTRODUCTION SECTION */
@@ -68,6 +78,10 @@ img {
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.description.section > * {
+    border: 5px solid red;
 }
 
 .description.section h2 {
@@ -165,19 +179,6 @@ img {
     flex-wrap: wrap;
 }
 
-.make-dish ol {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-}
-
-.make-dish .row {
-    width: 550px;
-    height: auto;
-    margin-left: 70px;
-    text-align: left;
-}
-
 .prep-ingredients .interpretation {
     width: 500px;
     height: auto;
@@ -187,13 +188,24 @@ img {
 .prep-ingredients img {
     width: 800px;
     height: auto;
-    margin: 100px;
+}
+
+.make-dish ol {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.make-dish .row {
+    width: 550px;
+    height: auto;
+    margin: 0 50px;
+    text-align: left;
 }
 
 .make-dish img {
     width: 900px;
     height: auto;
-    margin: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 28.8px;
 }
 
