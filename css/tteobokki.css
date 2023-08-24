@@ -14,6 +14,18 @@ body {
     src: url(../misc/AmestonOutline.otf);
 }
 
+@font-face {
+    font-family: gluck-regular;
+    src: url(../misc/gluck-fonts/Gluck\ Regular.otf);
+}
+
+@font-face {
+    font-family: gluck-bold;
+    src: url(../misc/gluck-fonts/Gluck\ Bold.otf);
+}
+
+/* INTRODUCTION SECTION */
+
 .tteobokki.intro::before {
     background: url(../img/tteobokki/manga-background.jpg);
     background-size: cover;
@@ -39,15 +51,6 @@ body {
     font-family: ameston-outline;
     font-size: 15rem;
     font-weight: normal;
-}
-
-@font-face {
-    font-family: gluck-regular;
-    src: url(../misc/gluck-fonts/Gluck\ Regular.otf);
-}
-@font-face {
-    font-family: gluck-bold;
-    src: url(../misc/gluck-fonts/Gluck\ Bold.otf);
 }
 
 .description {
@@ -92,7 +95,7 @@ body {
     filter: brightness(40%);
 }
 
-.ingredients-list { /* overall parent container */
+.ingredients.section { 
     display: flex;
     align-items: center;
     justify-content: space-around; 
@@ -103,20 +106,27 @@ body {
     flex-wrap: wrap;
 }
 
-.ingredients-list .images { /* Overall parent container */
+.ingredients.section .ingredients-lists {
     display: flex;
+    flex: auto;
     flex-direction: column;
 }
 
-.ingredients-list .row { /* 3 rows, each contains 3 images */
+.ingredients.section .interpretation {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+.ingredients.section .row { 
     align-items: center;
     justify-content: center;
     display: flex;
+    flex: auto;
 }
 
-.ingredients-list .row img { /* 9 images total, 3 in each row */
-    align-items: center;
-    margin: 5%;
+.ingredients.section img { 
+    margin: 45px;
     width: 250px;
     height: auto;
 }
@@ -135,7 +145,8 @@ body {
     filter: brightness(50%);
 }
 
-.prep {
+.prep-ingredients,
+.make-dish {
     display: flex;
     background-color: #000000;
     color: #ffffff;
@@ -147,38 +158,16 @@ body {
     flex-wrap: wrap;
 }
 
-.prep h2 {
-    font-family: gluck-bold;
-    font-size: 3rem;
-}
-
-.prep img {
+.prep-ingredients img {
     width: 800px;
     height: auto;
     margin: 100px;
 }
 
-.prep .interpretation {
+.prep-ingredients .interpretation {
     width: 500px;
     height: auto;
     text-align: left;
-}
-
-.make-dish {
-    display: flex;
-    background-color: #3a3434;
-    color: #ffffff;
-    font-family: gluck-regular;
-    font-size: 1.8rem;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.make-dish h2 {
-    font-family: gluck-bold;
-    font-size: 3rem;
 }
 
 .make-dish img {
