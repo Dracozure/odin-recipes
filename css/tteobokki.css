@@ -49,6 +49,7 @@ body {
 }
 
 h2 {
+    text-align: center;
     margin: 3.125rem 0;
 }
 
@@ -57,13 +58,39 @@ li {
 }
 
 img {
-    min-width: 300px;
+    min-width: 250px;
     min-height: auto;
     margin: 6.25rem 2.813rem;
 }
 
-@media screen {
-    
+@media screen and (max-width: 1201px) {
+    html {
+        font-size: 93%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    html {
+        font-size: 77%;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 673px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 497px) {
+    html {
+        font-size: 30%;
+    }
 }
 
 /* INTRODUCTION SECTION */
@@ -99,14 +126,12 @@ img {
 
 .description.section .interpretation {
     flex: initial;
-    width: 500px;
-    height: auto;
+    max-width: 500px;
+    min-height: auto;
 }
 
 .description.section img {
-    flex: initial;
-    width: 900px;
-    height: auto;
+    max-width: 900px;
 }
 
 /* INGREDIENTS SECTION */
@@ -154,10 +179,10 @@ img {
     justify-content: center;
 }
 
-.ingredients.section img { 
+.ingredients.section img {
+    flex: none; 
     margin: 2.813rem;
-    width: 250px;
-    height: auto;
+    max-width: 250px;
 }
 
 /* STEPS SECTION */
@@ -192,14 +217,12 @@ img {
 }
 
 .prep-ingredients .interpretation {
-    width: 500px;
-    height: auto;
+    max-width: 500px;
     text-align: left;
 }
 
 .prep-ingredients img {
-    width: 800px;
-    height: auto;
+    max-width: 800px;
 }
 
 .make-dish ol {
@@ -210,15 +233,13 @@ img {
 }
 
 .make-dish .row {
-    width: 550px;
-    height: auto;
+    max-width: 550px;
     margin: 0 3.125rem;
     text-align: left;
 }
 
 .make-dish img {
-    width: 900px;
-    height: auto;
+    max-width: 900px;
     margin-bottom: 1.8rem; /* Reduce extra space between margin of image and interpretation */
 }
 
