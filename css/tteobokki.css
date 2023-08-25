@@ -28,7 +28,7 @@ body {
     src: url(../misc/gluck-fonts/Gluck\ Bold.otf);
 }
 
-.intro.heading {
+.heading {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -37,13 +37,13 @@ body {
     font-size: 2rem;
 }
 
-.intro.heading h1 {
+.heading h1 {
     font-family: ameston-outline;
     font-size: 15rem;
     font-weight: normal;
 }
 
-.interpretation {
+.details {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
@@ -95,7 +95,7 @@ img {
 
 /* INTRODUCTION SECTION */
 
-.tteobokki.intro::before {
+.intro.heading::before {
     background: url(../img/tteobokki/manga-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ img {
     font-size: 4rem;
 }
 
-.description.section .interpretation {
+.description.section .details {
     flex: initial;
     max-width: 500px;
     min-height: auto;
@@ -136,7 +136,7 @@ img {
 
 /* INGREDIENTS SECTION */
 
-.ingredients.intro::after {
+.ingredients.heading::after {
     background: url(../img/tteobokki/ingredients-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,7 +173,7 @@ img {
     flex-wrap: wrap;
 }
 
-.ingredients.section .interpretation {
+.ingredients.section .details {
     display: flex;
     flex: auto;
     justify-content: center;
@@ -187,7 +187,7 @@ img {
 
 /* STEPS SECTION */
 
-.steps.intro::after {
+.steps.heading::after {
     background: url(../img/tteobokki/steps-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@ img {
     background-color: #161515;
 }
 
-.prep-ingredients .interpretation {
+.prep-ingredients .details {
     max-width: 500px;
     text-align: left;
 }
@@ -240,6 +240,6 @@ img {
 
 .make-dish img {
     max-width: 900px;
-    margin-bottom: 1.8rem; /* Reduce extra space between margin of image and interpretation */
+    margin-bottom: 1.8rem; /* Reduce extra space between margin of image and details */
 }
 
