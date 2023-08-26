@@ -30,9 +30,9 @@ body {
 
 .heading {
     display: flex;
-    align-items: center;
-    flex-direction: column;
     position: relative;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
     font-size: 2rem;
 }
@@ -98,7 +98,6 @@ img {
 .intro.heading::before {
     background: url(../img/tteobokki/manga-background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     inset: 0;
     z-index: -1;
     content: '';
@@ -125,7 +124,7 @@ img {
 }
 
 .description.section .details {
-    flex: initial;
+    flex: auto;
     max-width: 500px;
     min-height: auto;
 }
@@ -139,7 +138,6 @@ img {
 .ingredients.heading::after {
     background: url(../img/tteobokki/ingredients-background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     inset: 0;
     z-index: -1;
     content: '';
@@ -180,7 +178,6 @@ img {
 }
 
 .ingredients.section img {
-    flex: none; 
     margin: 2.813rem;
     max-width: 250px;
 }
@@ -190,7 +187,6 @@ img {
 .steps.heading::after {
     background: url(../img/tteobokki/steps-background.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     inset: 0;
     z-index: -1;
     content: '';
@@ -227,7 +223,7 @@ img {
 
 .make-dish ol {
     display: flex;
-    flex: 1;
+    flex: auto;
     flex-wrap: wrap;
     justify-content: center;
 }

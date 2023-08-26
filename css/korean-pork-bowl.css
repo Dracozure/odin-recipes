@@ -11,9 +11,19 @@ body {
     border: 0;
 }
 
+.section {
+    height: 100vh;
+    width: auto;
+}
+
+@font-face {
+    font-family: araboto;
+    src: url(../misc/araboto-fonts/Araboto\ Normal\ 400.ttf);
+}
+
 /* INTRODUCTION SECTION */
 
-.intro::after {
+.intro.section::before {
     background: url(../img/korean-pork-bowl/anime-room-background.jpg);
     background-size: cover;
     inset: 0;
@@ -24,59 +34,40 @@ body {
     filter: brightness(50%);
 }
 
-@font-face {
-    font-family: araboto;
-    src: url(../misc/araboto-fonts/Araboto\ Normal\ 400.ttf);
-}
-.intro {
-    position: relative;
+.intro.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: #ffffff;
-    margin: 0;
-    display: block;
     font-family: araboto;
+}
+
+.intro.intro.section > * {
+    border: 5px solid red;
+}
+
+.intro.section h1 {
+    font-size: 5.5rem;
+    letter-spacing: 1.5rem;
+}
+
+.intro.section .english.heading {
+    margin: 5rem;
+}
+
+.intro.section .korean.heading,
+.intro.section .japanese.heading {
+    writing-mode: vertical-lr;
+}
+
+.intro.section .details {
+    display: flex;
+    max-width: 1500px;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-}
-
-.details {
-    position: absolute;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    top: 50%;
     font-weight: bold;
-}
-
-.intro .korean-recipe-heading {
-    position: absolute;
-    font-size: 5em;
-    display: block;
-    margin: 0;
-    width: 1em;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 7%;
-}
-
-.intro .recipe-heading {
-    position: absolute;
-    display: block;
-    margin: 2m 0 auto;
-    top: 0;
-    width: 100%;
-    font-size: 5.5em;
-    letter-spacing: 0.2em;
-}
-
-.intro .japanese-recipe-heading {
-    position: absolute;
-    font-size: 4em;
-    display: block;
-    margin: 0;
-    width: 1em;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 7%;
 }
 
 .details h2 {
@@ -85,6 +76,11 @@ body {
 
 .details p {
     font-size: 1.95em;
+}
+
+.intro.section img {
+    width: 650px;
+    height: auto;
 }
 
 /* INGREDIENTS SECTION */
