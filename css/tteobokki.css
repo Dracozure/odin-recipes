@@ -124,7 +124,6 @@ img {
 }
 
 .description.section .details {
-    flex: auto;
     max-width: 500px;
     min-height: auto;
 }
@@ -149,7 +148,7 @@ img {
 .ingredients.section { 
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
     background-color: #000000;
     color: #ffffff;
     font-family: gluck-regular;
@@ -223,7 +222,6 @@ img {
 
 .make-dish ol {
     display: flex;
-    flex: auto;
     flex-wrap: wrap;
     justify-content: center;
 }
