@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-/* GENERAL SECTION */
+/* || General Section */
 
 @font-face {
     font-family: ameston-outline;
@@ -33,20 +33,31 @@ body {
 
 .heading h1 {
     flex: auto;
+    text-align: center;
     font-family: ameston-outline;
     font-size: 15rem;
     font-weight: normal;
     color: #ffffff;
-    text-align: center;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: gluck-regular;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .section .details {
     margin: 0 2.5rem;
+    font-size: 1.8rem;
 }
 
 .section .details h2 {
-    text-align: center;
     margin: 3.125rem 0;
+    text-align: center;
 }
 
 .section .details li {
@@ -55,9 +66,11 @@ body {
 }
 
 img {
+    margin: 6.25rem 2.813rem;
+    width: 100%;
+    height: auto;
     min-width: 250px;
     min-height: auto;
-    margin: 6.25rem 2.813rem;
 }
 
 @media screen and (max-width: 1201px) {
@@ -94,7 +107,7 @@ img {
     border: 5px red solid;
 }
 
-/* INTRODUCTION SECTION */
+/* || Introduction Section */
 
 .introduction.heading::before {
     background: url(../img/tteobokki/manga-background.jpg);
@@ -105,17 +118,6 @@ img {
     isolation: isolate;
     position: absolute;
     filter: brightness(60%);
-}
-
-.introduction.section {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: gluck-regular;
-    font-size: 1.8rem;
-    flex-wrap: wrap;
 }
 
 .introduction.section .details {
@@ -132,7 +134,7 @@ img {
     max-width: 900px;
 }
 
-/* INGREDIENTS SECTION */
+/* || Ingredients Section */
 
 .ingredients.heading::before {
     background: url(../img/tteobokki/ingredients-background.jpg);
@@ -145,24 +147,14 @@ img {
     filter: brightness(40%);
 }
 
-.ingredients.section { 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: gluck-regular;
-    font-size: 1.8rem;
-    flex-wrap: wrap;
-}
-
 .ingredients.section .ingredients-image-list {
     display: flex;
     flex-direction: column;
 }
 
 .ingredients.section .ingredients-image-list .row {
-    display: flex; 
+    display: flex;
+    justify-content: center; 
     align-items: center;
     flex-wrap: wrap;
 }
@@ -176,9 +168,9 @@ img {
     margin: 2.813rem;
 }
 
-/* STEPS SECTION */
+/* || Steps Section */
 
-.steps.heading::after {
+.steps.heading::before {
     background: url(../img/tteobokki/steps-background.jpg);
     background-size: cover;
     inset: 0;
@@ -191,13 +183,9 @@ img {
 
 .steps.section .subsection {
     display: flex;
-    background-color: #000000;
-    color: #ffffff;
-    font-family: gluck-regular;
-    font-size: 1.8rem;
+    flex: auto;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
     flex-wrap: wrap;
 }
 
@@ -213,6 +201,8 @@ img {
 .steps.section .subsection.make-dish {
     background-color: #161515;
 }
+
+/* FIX THIS CONTAINER MESS */
 
 .steps.section .subsection.make-dish ol {
     display: flex;
