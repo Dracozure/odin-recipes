@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 100%;
-}
-
 html,
 body {
     margin: 0;
@@ -33,14 +29,13 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    font-size: 2rem;
 }
 
 .heading h1 {
     font-family: ameston-outline;
     font-size: 15rem;
     font-weight: normal;
+    color: #ffffff;
 }
 
 .details {
@@ -93,6 +88,10 @@ img {
     }
 }
 
+.section > * {
+    border: 5px red solid;
+}
+
 /* INTRODUCTION SECTION */
 
 .intro.heading::before {
@@ -114,7 +113,6 @@ img {
     font-size: 1.8rem;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
     flex-wrap: wrap;
 }
 
@@ -125,7 +123,7 @@ img {
 
 .description.section .details {
     max-width: 500px;
-    min-height: auto;
+    text-align: center;
 }
 
 .description.section img {
@@ -158,27 +156,22 @@ img {
 
 .ingredients.section .ingredients-image-list {
     display: flex;
-    flex: auto;
     flex-direction: column;
 }
 
-.ingredients.section .row { 
+.ingredients.section .row {
+    display: flex; 
     align-items: center;
-    justify-content: center;
-    display: flex;
-    flex: auto;
     flex-wrap: wrap;
 }
 
 .ingredients.section .details {
     display: flex;
-    flex: auto;
-    justify-content: center;
 }
 
 .ingredients.section img {
-    margin: 2.813rem;
     max-width: 250px;
+    margin: 2.813rem;
 }
 
 /* STEPS SECTION */
@@ -207,10 +200,6 @@ img {
     flex-wrap: wrap;
 }
 
-.make-dish {
-    background-color: #161515;
-}
-
 .prep-ingredients .details {
     max-width: 500px;
     text-align: left;
@@ -218,6 +207,10 @@ img {
 
 .prep-ingredients img {
     max-width: 800px;
+}
+
+.make-dish {
+    background-color: #161515;
 }
 
 .make-dish ol {
