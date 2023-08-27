@@ -53,11 +53,11 @@ body {
 .section .details {
     margin: 0 2.5rem;
     font-size: 1.8rem;
+    text-align: center;
 }
 
 .section .details h2 {
     margin: 3.125rem 0;
-    text-align: center;
 }
 
 .section .details li {
@@ -65,12 +65,17 @@ body {
     text-align: left;
 }
 
-img {
+.main-image {
     margin: 6.25rem 2.813rem;
     width: 100%;
     height: auto;
+    max-width: 800px;
     min-width: 250px;
-    min-height: auto;
+}
+
+.sub-image {
+    max-width: 250px;
+    margin: 2.813rem;
 }
 
 @media screen and (max-width: 1201px) {
@@ -103,10 +108,6 @@ img {
     }
 }
 
-.section > * {
-    border: 5px red solid;
-}
-
 /* || Introduction Section */
 
 .introduction.heading::before {
@@ -122,16 +123,11 @@ img {
 
 .introduction.section .details {
     max-width: 500px;
-    text-align: center;
 }
 
 .introduction.section .details h2 {
     font-family: gluck-bold;
     font-size: 4rem;
-}
-
-.introduction.section img {
-    max-width: 900px;
 }
 
 /* || Ingredients Section */
@@ -159,15 +155,6 @@ img {
     flex-wrap: wrap;
 }
 
-.ingredients.section .details {
-    display: flex;
-}
-
-.ingredients.section img {
-    max-width: 250px;
-    margin: 2.813rem;
-}
-
 /* || Steps Section */
 
 .steps.heading::before {
@@ -191,7 +178,6 @@ img {
 
 .steps.section .subsection.prep-ingredients .details {
     max-width: 500px;
-    text-align: left;
 }
 
 .steps.section .subsection.prep-ingredients img {
@@ -201,8 +187,6 @@ img {
 .steps.section .subsection.make-dish {
     background-color: #161515;
 }
-
-/* FIX THIS CONTAINER MESS */
 
 .steps.section .subsection.make-dish ol {
     display: flex;
@@ -217,7 +201,6 @@ img {
 }
 
 .steps.section .subsection.make-dish img {
-    max-width: 900px;
     margin-bottom: 1.8rem; /* Reduce extra space between margin of image and details */
 }
 
