@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 html,
@@ -11,19 +9,45 @@ body {
     border: 0;
 }
 
-.section {
-    height: 100vh;
-    width: auto;
-}
+/* || General Section */
 
 @font-face {
     font-family: araboto;
     src: url(../misc/araboto-fonts/Araboto\ Normal\ 400.ttf);
 }
 
+.heading {
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+}
+
+.japanese.heading,
+.korean.heading {
+    writing-mode: vertical-lr;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    font-family: araboto;
+}
+
+.section .details {
+    max-width: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.section .details h2 {
+    font-size: 2em;
+}
+
 /* INTRODUCTION SECTION */
 
-.intro.section::before {
+.introduction.section::before {
     background: url(../img/korean-pork-bowl/anime-room-background.jpg);
     background-size: cover;
     inset: 0;
@@ -34,50 +58,6 @@ body {
     filter: brightness(50%);
 }
 
-.intro.section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #ffffff;
-    font-family: araboto;
-}
-
-.intro.intro.section > * {
-    border: 5px solid red;
-}
-
-.intro.section h1 {
-    font-size: 5.5rem;
-    letter-spacing: 1.5rem;
-}
-
-.intro.section .english.heading {
-    margin: 5rem;
-}
-
-.intro.section .korean.heading,
-.intro.section .japanese.heading {
-    writing-mode: vertical-lr;
-}
-
-.intro.section .details {
-    display: flex;
-    max-width: 1500px;
-    align-self: stretch;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-}
-
-.details h2 {
-    font-size: 3em;
-}
-
-.details p {
-    font-size: 1.95em;
-}
-
 .intro.section img {
     width: 650px;
     height: auto;
@@ -85,7 +65,7 @@ body {
 
 /* INGREDIENTS SECTION */
 
-.ingredients {
+/* .ingredients {
     position: relative;
     color: #ffffff;
     font-family: araboto;
@@ -165,10 +145,11 @@ body {
     width: fit-content;
     height: auto;
     padding: 0 5em;
-}
+} */
 
 /* Cooking instructions section begins */
-.cooking {
+
+/* .cooking {
     position: relative;
     font-family: araboto;
     text-align: center;
@@ -247,4 +228,4 @@ body {
     width: fit-content;
     height: auto;
     padding: 0 5em;
-}
+} */

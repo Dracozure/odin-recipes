@@ -26,12 +26,12 @@ body {
     src: url(../misc/gluck-fonts/Gluck\ Bold.otf);
 }
 
-.heading {
+header {
     display: flex;
     position: relative;
 }
 
-.heading h1 {
+header h1 {
     flex: auto;
     text-align: center;
     font-family: ameston-outline;
@@ -40,7 +40,7 @@ body {
     color: #ffffff;
 }
 
-.section {
+section {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -50,17 +50,17 @@ body {
     color: #ffffff;
 }
 
-.section .details {
+section .details {
     margin: 0 2.5rem;
     font-size: 1.8rem;
     text-align: center;
 }
 
-.section .details h2 {
+section .details h2 {
     margin: 3.125rem 0;
 }
 
-.section .details li {
+section .details li {
     margin: 0.625rem 0;
     text-align: left;
 }
@@ -110,7 +110,7 @@ body {
 
 /* || Introduction Section */
 
-.introduction.heading::before {
+header.introduction::before {
     background: url(../img/tteobokki/manga-background.jpg);
     background-size: cover;
     inset: 0;
@@ -121,18 +121,18 @@ body {
     filter: brightness(60%);
 }
 
-.introduction.section .details {
+section.introduction .details {
     max-width: 500px;
 }
 
-.introduction.section .details h2 {
+section.introduction .details h2 {
     font-family: gluck-bold;
     font-size: 4rem;
 }
 
 /* || Ingredients Section */
 
-.ingredients.heading::before {
+header.ingredients::before {
     background: url(../img/tteobokki/ingredients-background.jpg);
     background-size: cover;
     inset: 0;
@@ -143,12 +143,12 @@ body {
     filter: brightness(40%);
 }
 
-.ingredients.section .ingredients-image-list {
+section.ingredients .ingredients-image-list {
     display: flex;
     flex-direction: column;
 }
 
-.ingredients.section .ingredients-image-list .row {
+section.ingredients .ingredients-image-list .row {
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -157,7 +157,7 @@ body {
 
 /* || Steps Section */
 
-.steps.heading::before {
+header.steps::before {
     background: url(../img/tteobokki/steps-background.jpg);
     background-size: cover;
     inset: 0;
@@ -168,7 +168,7 @@ body {
     filter: brightness(50%);
 }
 
-.steps.section .subsection {
+section.steps .subsection {
     display: flex;
     flex: auto;
     align-items: center;
@@ -176,31 +176,31 @@ body {
     flex-wrap: wrap;
 }
 
-.steps.section .subsection.prep-ingredients .details {
+section.steps .subsection.prep-ingredients .details {
     max-width: 500px;
 }
 
-.steps.section .subsection.prep-ingredients img {
+section.steps .subsection.prep-ingredients img {
     max-width: 800px;
 }
 
-.steps.section .subsection.make-dish {
+section.steps .subsection.make-dish {
     background-color: #161515;
 }
 
-.steps.section .subsection.make-dish ol {
+section.steps .subsection.make-dish ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.steps.section .subsection.make-dish .row {
+section.steps .subsection.make-dish .row {
     max-width: 550px;
     margin: 0 3.125rem;
     text-align: left;
 }
 
-.steps.section .subsection.make-dish img {
+section.steps .subsection.make-dish img {
     margin-bottom: 1.8rem; /* Reduce extra space between margin of image and details */
 }
 
