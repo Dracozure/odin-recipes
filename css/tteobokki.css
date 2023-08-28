@@ -68,7 +68,6 @@ section .details li {
 .main-image {
     margin: 6.25rem 2.813rem;
     width: 100%;
-    height: auto;
     max-width: 800px;
     min-width: 250px;
 }
